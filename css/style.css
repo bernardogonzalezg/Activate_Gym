@@ -1,0 +1,185 @@
+@font-face {
+    font-family: fuente;
+    src: url(../font/Scratch\ Boys.ttf);
+}
+
+body {
+    font-family: fuente;
+    color: white;
+}
+
+.encabezado, .secciones, .piedepagina, .contener, .style-form, .tabla-dinamica{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.secciones, .paginamusculacion, .paginacrossfit, .formulario  {
+    text-align: center;    
+}
+
+.musculacion, .crossfit {
+    margin: 5px;
+    border: 5px solid;
+}
+
+.piedepagina    {
+    background-color: black;
+}
+
+.logo {
+    border-radius: 50%;
+}
+
+.titulo {
+    margin: 0px;
+    padding: 0px;
+    font-size: 70px;
+}
+
+.btn-menu   {
+    padding: 10px;
+    color: white;
+    background-color: black;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    background-color: black; 
+}
+
+nav ul {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+}
+
+.show {
+    align-items: center;
+    display: flex;
+}
+
+nav ul li, .list-equip {
+list-style: none;
+margin: 0px;
+padding: 10px 15px;
+}
+
+ul.navegacion li a {
+text-decoration: none;
+color: white;
+}
+
+ul.navegacion li:hover {
+background-color: gray;
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+    color:darkred;
+}
+
+.subtitulos  {
+    font-size: 70px;
+}
+
+.volver {
+    align-items: center;
+    color: blue;
+}
+
+.style-form {
+    background-image: url(../images/fondoen_formu.jpg);
+    background-size: cover;
+    border: solid 10px rgb(204, 114, 30);
+    margin-bottom: 1%;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 15px;
+    min-width: 200px;
+
+}
+
+.btn-enviar {
+    margin-top: 20%;
+}
+
+#captchatext    {
+    background-color: grey;
+    color: white;
+    margin-left: 40%;
+    margin-bottom: 5%;
+    justify-content: center;
+    width: 20%;
+    font-size: 30px;
+    border-radius: 10px;
+}
+
+.home   {
+    background-image: url(../images/fondo_index.jpg);
+}
+
+.casa   {
+    background-image: url(../images/en_casa.jpg);
+    background-size: contain;
+}
+
+.paginamusculacion  {
+    background-image:  url(../images/fondo_musculacion.jpg);
+}
+
+.paginacrossfit {
+    background-image: url(../images/fondo_crossfit.jpg);
+}
+
+.formulario {
+    background-image: url(../images/fondo_formulario.jpg);
+}
+
+th {
+    background-color: darkslategrey;
+}
+
+th, tr, td {
+    border :skyblue solid;
+    padding: 5px;
+}
+
+section h2 {
+    padding: 20px;
+}
+
+@media screen and (min-width: 660px){
+
+    .btn-menu {
+        display: none;
+    }
+
+    ul.navegacion, .secciones, .piedepagina, .contener, .tabla-dinamica {    
+        display: flex;
+        flex-direction: row;
+        padding: 5px;
+    }
+
+    ul.navegacion, .secciones {
+        font-size: 30px;
+        margin: 0px 0px;    
+        justify-content: space-around;
+    }
+
+    .musculacion, .crossfit {
+        margin-top: 30px;
+        width: auto;
+        height: 650px;
+        
+    }
+
+    .piedepagina, .contener {
+        justify-content: space-between;
+        padding: 0px 40px;
+        margin: 0px 20px;
+    }
+
+}

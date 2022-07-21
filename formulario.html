@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Inscripción</title>
+</head>
+<body class="formulario">
+    <header class="encabezado">
+        <img class="logo" src="images/logo.jpg" alt="logo"> 
+        <h1 class="titulo"> Activate Gym</h1>
+        <button class="btn-menu">Menu</button>
+    </header> 
+        
+    <nav class="menu">
+        <ul class="navegacion">
+            <li><a href="Formulario.html"> Inscripción </a></li>
+            <li><a href="entrenoencasa.html"> Entreno en casa </a></li>
+            <li><a href="salud.html"> Ejercicio, Salud y Nutricion </a></li>
+        </ul>
+    </nav>
+    <h1 class="form-title" >Formulario de inscripción</h1>
+    <form id="submit" class="style-form" action="">
+        <div><p> Apellido :</p><input id="apellido" type="text" value="" required></div>
+        <div><p> Nombre :</p><input id="nombre" type="text" value="" required></div>  
+        <div><p > Edad: </p> <input type="edad" id="edad" name="edad" value="" required></div>
+        <div>
+            <button  name="enviar" id="enviar" class="btn-enviar">Enviar</button>  
+        </div>
+        <h4 id="resultado"></h4>
+        </div>
+    </form>
+    <input id="filtro" type="text" value="" placeholder="Ingrese apellido a filtrar">
+    <button id="btn-filtrar">filtrar</button>
+    <button  name="triplicar" id="triplicar" class="triplicar">obtener 3 datos</button>
+    <section  class="tabla-dinamica">
+        <h2>Tabla de inscriptos:</h2>
+        <table id="tabla">
+            <thead>
+                <tr>
+                    <th>Apellido</th>
+                    <th>Nombre</th>
+                    <th>Edad</th> 
+                    <th>Modificar</th>
+                    <th>Borrar</th>  
+                </tr>
+            </thead>
+            <tbody id="cuerpotabla">
+            </tbody>
+        </table>      
+    </section>
+    
+    <p id="respuesta"></p>
+    <a href="index.html">Volver al HOME</a>
+         
+    <footer class=piedepagina>
+        <div>
+            <p>Los contenidos divulgados por esta pagina son de caracter informativo.</p>
+            <p>En caso de dudas consultar con su entrenador profesional y personal.</p>
+        </div>
+        <div>    
+            <p>Activate Gym</p>
+            <p>Mayo - 2021</p>
+        </div>
+    </footer>
+    <script src="js/fomrtabla.js"></script>    
+</body>
+</html>
